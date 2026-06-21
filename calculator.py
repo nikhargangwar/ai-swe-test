@@ -1,4 +1,8 @@
 def divide(a, b):
+    # Fix: Add a check to prevent ZeroDivisionError.
+    # If the divisor 'b' is zero, raise a ZeroDivisionError with a descriptive message.
+    if b == 0:
+        raise ZeroDivisionError("Cannot divide by zero.")
     return a / b
 
 
